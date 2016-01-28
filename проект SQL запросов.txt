@@ -1,0 +1,47 @@
+=============================
+SQL запросы
+=============================
+
+
+Создание таблиц
+=================================
+
+//пользователи
+CREATE TABLE users
+( id int PRIMARY KEY auto_increment,
+  nickname VARCHAR(50),
+  email  VARCHAR(20),
+  password VARCHAR(20),
+  status VARCHAR(20)
+ 
+)
+
+//ЗАМЕТКИ
+
+CREATE TABLE articles
+(
+  id int PRIMARY KEY auto_increment,
+  iduser int,
+  article longtext,
+  postdate datetime,
+  status VARCHAR(20)
+)
+
+//КОММЕНТАРИИ
+
+CREATE TABLE comments
+(
+ id int PRIMARY KEY auto_increment,
+ idarticle int,
+ iduser int,
+ comment longtext,
+)
+
+
+//ЛАЙКИ
+
+CREATE TABLE likes
+(
+   idarticle int,
+   iduser int,
+)
