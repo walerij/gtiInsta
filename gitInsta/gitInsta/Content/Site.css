@@ -1,0 +1,42 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background: #FAFAFA;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+#navi {
+    background-color: #151a7a; color: #ffffff;
+   /* height: 50px;*/
+}
+#header {
+  height: 50px;
+}
+.logo {
+    font-family: 'Pacifico', cursive; font-size: 26px;
+}
+#search {margin-left: 10px; 
+         border: none;
+         border-radius: 10px 10px 10px 10px;
+         padding-left: 25px;
+         background: url("../Resources/search1.png") no-repeat;
+
+         background-color: white;
+         height: 25px;
+
+}
+
+
+
+#footer{clear:both}

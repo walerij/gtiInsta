@@ -45,3 +45,19 @@ CREATE TABLE likes
    idarticle int,
    iduser int,
 )
+
+//ТЕМЫ
+
+CREATE TABLE Themes
+( id int PRIMARY KEY auto_increment,
+  theme text
+)
+
+//СОЕДИНЯЕТ СТАТЬИ И ТЕМЫ
+CREATE TABLE artilcethemes
+(
+   idarticle int;
+   idthemes int;
+
+)
+

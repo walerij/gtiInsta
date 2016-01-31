@@ -1,0 +1,48 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Instagram от Валеры</title>
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+</head>
+<body>
+    <div id="navi" class="navbar navbar-fixed-top">
+        <div class="col-xs-4"></div>
+        <div class="col-xs-4"> <span class="logo"> Instagram</span> от Валеры @Html.TextBox("search", "Index", "Поиск")</div>
+        <div class="col-xs-4"></div>
+        
+         
+    </div>
+    <div id="header" >
+        <div class="col-xs-4"></div>
+        <div class="col-xs-4"></div>
+        <div class="col-xs-4"></div>
+    </div>
+    <div id="container" class="col-xs-12">
+        <div class="col-xs-4"></div>   
+        <div class="col-xs-4">@RenderBody()</div>
+        <div class="col-xs-4"></div>
+       
+    </div>
+    <div id="footer">
+        <div class="col-xs-4"></div>
+        <div class="col-xs-4">@DateTime.Now.Year - Instagram от Валеры</div>
+        <div class="col-xs-4"></div>
+        
+    </div>
+
+
+
+</body>
+
+
+</html>
+
+
+
+
