@@ -40,3 +40,9 @@ textarea {
 
 
 #footer{clear:both}
+.field-validation-error {
+    color: red;
+}
+.input-validation-error {
+    background-color: #eeb7a2;
+}

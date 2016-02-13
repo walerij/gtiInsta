@@ -16,6 +16,16 @@ CREATE TABLE users
  
 )
 
+CREATE TABLE [dbo].[users]
+(
+	[Id] INT NOT NULL PRIMARY KEY, 
+    [nickname] VARCHAR(50) NULL, 
+    [email] VARCHAR(50) NULL, 
+    [password] VARCHAR(50) NULL, 
+    [status] VARCHAR(50) NULL, 
+    [regdate] DATETIME NULL 
+)
+
 //ЗАМЕТКИ
 
 CREATE TABLE articles
@@ -60,4 +70,7 @@ CREATE TABLE artilcethemes
    idthemes int;
 
 )
+
+ВЫБОРКИ И ОПЕРАЦИИ
+===================
 
